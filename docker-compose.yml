@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  duckdns-updater:
+    build: .  
+    environment:
+      - DUCKDNS_TOKEN=xxx
+      - DUCKDNS_DOMAIN=xxx
+    restart: always
